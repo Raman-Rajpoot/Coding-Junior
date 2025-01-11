@@ -6,7 +6,7 @@ type ApiError struct {
 	Status  int    `json:"status"`
 	Message string `json:"message"`
 }
-
+// NewApiError creates a new ApiError instance
 func NewApiError(status int, message string) *ApiError {
 	return &ApiError{Status: status, Message: message}
 }

@@ -6,6 +6,7 @@ import SignUp from './SignUp';
 import './App.css';
 function App() {
   return (
+    // define routes and components
     <Router>
       <Routes>
         <Route path="/" element={<Profile />} />

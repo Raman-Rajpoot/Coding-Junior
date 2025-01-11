@@ -16,6 +16,7 @@ function Login() {
 
   const navigate = useNavigate();
 
+// For checking Error in the input fields
   const fieldValidation = (e, field) => {
     const value = e.target.value;
 
@@ -64,6 +65,7 @@ function Login() {
     }
   };
 
+  // For submitting the form
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     if (fieldError.emailError || fieldError.usernameError || fieldError.passwordError) {

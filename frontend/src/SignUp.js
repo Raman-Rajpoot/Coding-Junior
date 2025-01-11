@@ -95,7 +95,7 @@ function SignUp() {
           if (!loginResponse.ok) {
             const loginError = await loginResponse.json();
             setError(loginError.message || 'Login failed after successful sign-up. Please log in manually.');
-            setTimeout(() => navigate('/login'), 2000);
+            setTimeout(() => navigate('/login'), 2000); // Redirect to login page after 2 seconds
             return;
           }
 
