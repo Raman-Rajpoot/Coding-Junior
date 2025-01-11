@@ -1,0 +1,52 @@
+# Ignore binary executables
+*.exe
+*.test
+*.out
+
+# Go-specific ignores
+# Dependency directories
+/vendor/
+/Godeps/
+
+# Go workspace files
+*.a
+*.o
+*.so
+*.dll
+
+# Go module cache
+/go/pkg/
+
+# Go mod and sum files are usually tracked
+# Untracked dependencies can be ignored if desired
+#go.sum
+
+# Ignore environment variable files
+.env
+
+# Ignore log files
+*.log
+
+# Ignore OS-generated files (Mac, Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+
+# Node.js specific (if used with Go, for frontend or server-side tools)
+node_modules/
+
+# Temporary build files
+/build/
+/dist/
+*.tmp
+
+# Ignore test coverage reports
+coverage.out
+*.coverprofile
+
+# Ignore system files
+*.swp
+*.swo
